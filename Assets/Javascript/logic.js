@@ -12,7 +12,15 @@ function displayGifs () {
         method: "GET"
     }).then(function(response) { 
 
-        
+        console.log(response); 
+
+        var gifDiv = $("<div class='gif'>"); 
+
+        var rating = response.rating; 
+
+        var divOne = $("<div>").text("Rating: " + rating); 
+
+        gifDiv.append(divOne); 
 
     })
 }   
