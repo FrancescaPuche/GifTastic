@@ -40,7 +40,7 @@ $(document).ready(function() {
                     gifDiv.append(p);
                     gifDiv.append(topicImage);
 
-                    $("#gifs-appear-here").prepend(gifDiv);
+                    $("#gif-view").prepend(gifDiv);
                 }
 
                 $(".topicImage").on("click", function() { 
