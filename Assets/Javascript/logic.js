@@ -69,7 +69,23 @@ function buttons () {
 
         var btn = $("<button>"); 
 
-        btn.addClass("topic-btn btn btn-danger")
+        btn.addClass("topic-btn btn btn-danger"); 
+        btn.attr("data-topic", topics[i]); 
+        btn.text(topics[i]); 
+
+        $("#buttons").append(btn); 
     }
 }
+
+$("#add-gif").on("click", function(event) { 
+
+    event.preventDefault(); 
+
+    var topicGif = $("#gif-input").val().trim(); 
+
+    topics.push(topicGif); 
+
+    buttons();
+});
+
 
