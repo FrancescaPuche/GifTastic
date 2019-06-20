@@ -58,7 +58,18 @@ function displayGifs () {
             });
         }
     });
+}
 
+function buttons () { 
 
+    // for deleting movies 
+    $("#buttons").empty();
+
+    for (var i = 0; i < topics.length; i++) { 
+
+        var btn = $("<button>"); 
+
+        btn.addClass("topic-btn btn btn-danger")
+    }
 }
 
